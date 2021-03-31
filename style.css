@@ -4,6 +4,10 @@
 	word-wrap: break-word;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	background-image: url("images/dot-grid.jpg");
 	background-repeat: repeat;
@@ -11,7 +15,7 @@ body {
 }
 
 .bodywrapper {
-	width: 1280px;
+	width: auto;
 	margin: auto;
 }
 
@@ -21,6 +25,8 @@ body {
 }
 
 .patternbg {
+	position: absolute;
+	top: 96px;
 	width: auto;
 	margin: auto;
 	height: 140px;
@@ -33,14 +39,23 @@ body {
     background-color: #313638;
 }
 
+#fade {
+	opacity: 0;
+}
+
 .banner {
+	position: fixed;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
 	flex-wrap: wrap;
-	background-color: #313638;
-	width: auto;
-	height: 75%;
-	padding: 40px;
+	background-color: transparent;
+	width: 100%;
+	height: 96px;
 	padding-bottom: 0px;
+	top: 0;
+	z-index: 1;
 }
 
 .section {
@@ -96,11 +111,28 @@ p::selection {
 	border: 4px solid #EE6461;height:50px;
 }
 
-h1 {
+h2 {
 	font-family: 'Unica One', cursive;
 	font-size: 72px;
 	color: #EE6461;
 	margin-bottom: 40px;
+}
+
+.cart-button {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+.cart-button svg {
+	fill: #E5E5E5;
+	transiton: 0.3s;
+}
+
+.cart-button:hover svg {
+	fill:#EE6461;
 }
 
 .imgbox {
@@ -154,7 +186,7 @@ h1 {
 	margin: auto;
 }
 
-.imgbox h1 {
+.imgbox h2 {
 	width: 100%;
 	text-align: right;
 	margin-right: 40px;
@@ -169,6 +201,7 @@ h1 {
 	color: #EE6461;
 	float: right;
 	margin-right: 20px;
+	transition: 0.3s;
 }
 
 .button:hover {
@@ -187,9 +220,10 @@ p {
 	font-family: 'Inconsolata', monospace;
 	font-size: 24px;
 	line-height: 36px;
+	margin: 20px;
 }
 
-.section h1 {
+.section h2 {
 	width: 100%;
 	height: auto;
 	text-decoration: overline;
@@ -204,37 +238,47 @@ p {
 }
 
 .subsection p {
-	color: black;
+	color: #32303c;
 	max-width: 50%;
 	background-color: none;
 	margin-bottom: 40px;
 }
 
-.subsection h1 {
+.subsection h2 {
 	width: 100%;
 }
 
 .banner img {
 	width: 200px;
+	margin-left: 40px;
 	background-color: none;
 }
 
-.hairline {
-	height: 2px;
-	width: 100%;
-	border-style: dotted;
-	border-width: 3px;
-	border-color: #EE6461;
-	margin-top: 40px;
+#center {
+	margin:auto;
+	text-align: center;
 }
 
-.banner h1 {
-	font-size: 100px;
-	background: -webkit-linear-gradient(90deg, #EE6461, #a188bf);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-top: 40px;
-	width: 60%;
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	top:0px;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('images/hero.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-family: 'Unica One', cursive;
+	font-size: 75px;
+	color: white;
+	width: auto;
+	text-align: center;
+	height: auto;
 }
 
 .feature_area {
@@ -254,6 +298,7 @@ p {
 	width: 350px;
 	background-color: none;
 	margin: auto;
+	padding: 40px;
 }
 
 .subsection {
@@ -342,7 +387,7 @@ p {
 	flex-direction: column;
 	align-items: flex-start;
 	align-content: flex-start;
-	height: 350px;
+	height: 450px;
 	width: 200px;
 	background-color: none;
 	color: #313638;
@@ -351,6 +396,7 @@ p {
 	font-size: 32px;
 	text-align: center;
 	margin: auto;
+	overflow: hidden;
 }
 
 .color {
@@ -361,7 +407,6 @@ p {
 	width: 150px;
 	height: 150px;
 	border-radius: 100%;
-	background-color: red;
 }
 
 .vgallery p {
@@ -386,6 +431,7 @@ p {
 	bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
+	padding:10px;
 }
 
 .footer ul {
@@ -403,5 +449,5 @@ p {
 }
 
 .footer a li:hover {
-	color: #EE6461;
+	color: #32303c;
 }
