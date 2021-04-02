@@ -51,11 +51,12 @@ body {
 	align-items:center;
 	flex-wrap: wrap;
 	background-color: transparent;
-	width: 100%;
+	width: 100vw;
 	height: 96px;
 	padding-bottom: 0px;
 	top: 0;
 	z-index: 1;
+	overflow:hidden;
 }
 
 .section {
@@ -128,7 +129,7 @@ h2 {
 
 .cart-button svg {
 	fill: #E5E5E5;
-	transiton: 0.3s;
+	transition: 0.3s;
 }
 
 .cart-button:hover svg {
@@ -274,11 +275,29 @@ p {
 
 h1 {
 	font-family: 'Unica One', cursive;
-	font-size: 75px;
+	font-size: 62px;
 	color: white;
 	width: auto;
 	text-align: center;
 	height: auto;
+}
+
+.arrow {
+    height: 32px;
+    width: 32px;
+    stroke:white;
+    animation: point 2s infinite;
+}
+
+@keyframes point {
+    from {
+        margin-top: 0;
+        opacity:1;
+    }
+    to {
+        margin-top: 64px;
+        opacity: 0;
+    }
 }
 
 .feature_area {
@@ -450,4 +469,28 @@ h1 {
 
 .footer a li:hover {
 	color: #32303c;
+}
+
+#fade {
+	height:320px;
+}
+
+@media (pointer: fine) {
+	#fade {
+		height: 96px;
+	}
+}
+
+@media (pointer: coarse) {
+	.banner {
+		height: 200px;
+	}
+	.banner img {
+		scale:2;
+		padding: 120px;
+	}
+	.top-links {
+		scale: 2;
+		padding: 80px;
+	}
 }
