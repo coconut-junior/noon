@@ -134,14 +134,14 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items:center;
-	margin-left:10px;
-	margin-right: 10px;
+	margin-left:20px;
+	margin-right: 20px;
 }
 
 .cart-button svg {
 	height: 32px;
 	width: 32px;
-	fill: #E5E5E5;
+	fill: white;
 	transition: 0.3s;
 }
 
