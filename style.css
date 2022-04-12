@@ -524,7 +524,24 @@ h1 {
 		width: 100%;
 	}
 
+	h2 {
+		font-size:4em;
+	}
 
+	.section p {
+		font-size: 3em;
+		line-height: 150%;
+	}
+
+	.subsection p {
+		font-size: 3em;
+		line-height: 150%;
+		max-width:80%;
+		text-align: left;
+	}
+	#center {
+		text-align: left;
+	}
 	.hero p {
 		margin: 80px;
 		font-size: 2em;
