@@ -8,36 +8,36 @@
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Unica+One&display=swap" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		
+
 	</head>
 	<body>
 
 		<div class = "hero" id = "hero">
 			<h1 style = "margin-top: 80px;">Shade, privacy, airflow.</h1>
-			<p style = "font-size: 18px;text-align: center;color:#E5E5E5;">Unique window coverings for your home or business.</p>
+			<p style = "text-align: center;color:#E5E5E5;">Unique window coverings for your home or business.</p>
 			<a href = "#order" style = "z-index: 1;" href = "cuisine.html"><div class = "button-light">Order Now</div></a>
 		</div>
 
-		<div style = "position: absolute;top: 80vh;z-index:2;background-color:transparent;display:flex;justify-content:center;height:64px;width:100vw;">
-		
+		<div style = "position: absolute;top: 90vh;z-index:2;background-color:transparent;display:flex;justify-content:center;height:64px;width:100vw;">
+
 			<svg class = "arrow" viewBox="0 0 20 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M0.5 1L9.66025 6L18.6603 1" stroke-miterlimit="10" stroke-linecap="round"/>
 			</svg>
-				
+
 		</div>
 
 		<div class = "banner">
 			<div id = "fade" style = "background-color: #32303c;width:100%;position:fixed;overflow: hidden;"></div>
-			
-			<a href = "#hero" style = "margin-left:40px;"><img src = "images/logo.png" style = "opacity:1;height: 36px; width: auto;"></a>
-			
-			<div class = "top-links" style = "z-index:2;height:42px;display: flex;margin-right:80px;">
-				<div class = "cart-button" style = "cursor:pointer;height:auto;width:36px;transition: 0.3s;">
+
+			<a id = "logo" href = "#hero"></a>
+
+			<div class = "top-links">
+				<div class = "cart-button" style = "cursor:pointer;transition: 0.3s;">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0392 21 20.5305 21 20V9.00003C21 8.73481 20.8946 8.48046 20.7071 8.29292C20.5196 8.10538 20.2652 8.00003 20 8.00003H17V7.22303C17 4.61403 15.097 2.27803 12.5 2.02503C11.8049 1.95594 11.103 2.03313 10.4395 2.25163C9.77599 2.47013 9.16557 2.8251 8.64752 3.2937C8.12946 3.76231 7.71524 4.33417 7.43149 4.9725C7.14774 5.61082 7.00076 6.30148 7 7.00003V8.00003H4C3.73478 8.00003 3.48043 8.10538 3.29289 8.29292C3.10536 8.48046 3 8.73481 3 9.00003V20C3 20.5305 3.21071 21.0392 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22ZM17 10V12H15V10H17ZM9 7.00003C9 5.34603 10.346 4.00003 12 4.00003C13.654 4.00003 15 5.34603 15 7.00003V8.00003H9V7.00003ZM7 10H9V12H7V10Z"/>
 						</svg>
 			</div>
-			<div class = "cart-button" style = "cursor:pointer;height:auto;width:36px;transition: 0.3s;">
+			<div class = "cart-button" style = "cursor:pointer;transition: 0.3s;">
 				<a href = "https://www.kickstarter.com/projects/223504157/noon-blinds">
 				<svg width="15" height="15" viewBox="0 0 44 52" xmlns="http://www.w3.org/2000/svg">
 					<path d="M16.8944 17.8598L26.2699 4.26266C28.0492 1.707 30.3329 0.426331 33.1464 0.426331C35.43 0.426331 37.4134 1.2395 39.0879 2.86583C40.7595 4.49216 41.5954 6.43583 41.5954 8.69966C41.5954 10.3713 41.1562 11.8532 40.2665 13.1282L31.8147 25.4248L42.1535 38.5347C43.182 39.8408 43.7034 41.368 43.7034 43.1162C43.7034 45.4282 42.893 47.4172 41.2667 49.0803C40.5087 49.8819 39.5925 50.5172 38.576 50.9459C37.5595 51.3746 36.4651 51.5874 35.362 51.5708C32.8262 51.5708 30.8939 50.7463 29.5622 49.0973L16.9 33.293V42.0027C16.9 44.4932 16.4694 46.4255 15.6052 47.8082C14.0327 50.3157 11.7632 51.5708 8.75704 51.5708C6.02854 51.5708 3.9092 50.6415 2.41037 48.8027C1.00503 47.097 0.302368 44.8473 0.302368 42.0395V9.731C0.302368 7.079 1.0192 4.88883 2.44154 3.16333C3.92903 1.3415 5.99737 0.429164 8.6352 0.429164C11.1484 0.429164 13.2365 1.3415 14.9139 3.16333C15.846 4.17483 16.4354 5.19483 16.6847 6.229C16.8349 6.87216 16.9085 8.05933 16.9085 9.816V17.8627H16.8944V17.8598Z" />
@@ -46,7 +46,7 @@
 			</div>
 
 			</div>
-			
+
 
 		</div>
 
@@ -54,7 +54,7 @@
 		<div class = "bodywrapper">
 		<div class = "section">
 			<h2 style = "margin-top: 80px;">About</h2>
-			
+
 			<p>
 				Inspired by the old ornate windows found in castles and old houses, Noon Blinds offer a modern twist to this time-tested design. Our blinds offer shade, privacy, and airflow while casting unique shadows across your walls.
 			</p>
